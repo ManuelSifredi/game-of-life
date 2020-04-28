@@ -1,0 +1,26 @@
+{
+  "name": "phaser3-typescript-project-template-master",
+  "version": "1.0.0",
+  "description": "This quick-start project template combines Phaser 3 with [TypeScript](https://www.typescriptlang.org/) and uses [Rollup](https://rollupjs.org) for bundling.",
+  "main": "rollup.config.dev.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rollup --config rollup.config.dev.js",
+    "build": "rollup --config rollup.config.dist.js",
+    "watch": "rollup --watch --config rollup.config.dev.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-replace": "^2.3.2",
+    "phaser": "^3.22.0",
+    "rollup": "^2.6.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-typescript2": "^0.27.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "typescript": "^3.8.3"
+  }
+}
