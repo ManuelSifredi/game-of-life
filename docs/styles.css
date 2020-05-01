@@ -1,3 +1,31 @@
 html, body, pre, code, kbd, samp {
     font-family: "Press Start 2P";
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 576px) {
+    .h1{ font-size: 1.4rem;  }
+    .h2{ font-size: 1rem; }
+    .p{ font-size: 0.6rem; line-height: 1rem; }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .h1{ font-size: 2.2rem; }
+    .h2{ font-size: 1.2rem; }
+    .p{ font-size: 0.8rem; line-height: 1.4rem; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .h1{ font-size: 2.8rem; }
+    .h2{ font-size: 1.6rem; }
+}
+
+@media screen and (min-width: 992px) {
+    .h1{ font-size: 3.8rem; }
+    .h2{ font-size: 2.2rem; }
+}
+
+#gameoflife > canvas{
+    cursor: default;
+    border: 1px solid white;
 }

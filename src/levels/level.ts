@@ -15,7 +15,8 @@ export default class Level extends Phaser.Scene {
     timerGame: any;
     cursors: any
 
-    labelPause = (<HTMLElement>document.querySelector(".gameLabel"));
+    buttonPause = (<HTMLElement>document.querySelector(".gameLabel"));
+    labelPause = this.buttonPause.children[0];
     create() {
 
         this.setupCells();
@@ -25,7 +26,7 @@ export default class Level extends Phaser.Scene {
             action: Phaser.Input.Keyboard.KeyCodes.ENTER
         });
         
-        this.labelPause.addEventListener('click', () => {
+        this.buttonPause.addEventListener('click', () => {
             this.changeGameState();
         });
 
@@ -73,14 +74,14 @@ export default class Level extends Phaser.Scene {
 
     changeHtml(isPaused: boolean){
         if(isPaused){
-            this.labelPause.innerHTML = "Paused";
-            this.labelPause.classList.add("is-error");
-            this.labelPause.classList.remove("is-success");
-        }
-        else{
             this.labelPause.innerHTML = "Play!";
             this.labelPause.classList.add("is-success");
             this.labelPause.classList.remove("is-error");
+        }
+        else{
+            this.labelPause.innerHTML = "Pause";
+            this.labelPause.classList.add("is-error");
+            this.labelPause.classList.remove("is-success");
         }
     }
 

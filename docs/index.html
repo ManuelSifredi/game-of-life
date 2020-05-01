@@ -27,35 +27,35 @@
   <title>Game of life</title>
 </head>
 
-<body class="d-flex flex-column py-2 justify-content-between container">
+<body>
 
-  <header class="text-center">
-    <div class="row">
+  <div class="container text-center">
+
+    <div class="row mt-5 mb-3">
       <div class="col-12">
-        <h1># Game of life</h1>
-      </div>
-    </div>
-  </header>
-
-  <main class="d-flex flex-column justify-content-between py-5">
-
-    <div class="row text-center mb-5">
-      <div class="col-12">
-        <h2># Conway's Game of Life</h2>
+        <h1 class="h1"># Game of life</h1>
       </div>
     </div>
 
     <div class="row mb-5">
-      <div class="col-12 text-center">
+      <div class="col-12">
+        <h2 class="h2"># Conway's Game of Life</h2>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-12">
         <div class="nes-container is-dark with-title">
           <p class="title">What's this?</p>
-          <p>The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician
+          <p class="p">The Game of Life, also known simply as Life, is a cellular automaton devised by the British
+            mathematician
             John
             Horton Conway in 1970. It is a zero-player game, meaning that its evolution is determined by its initial
             state,
             requiring no further input. One interacts with the Game of Life by creating an initial configuration and
             observing how it evolves. It is Turing complete and can simulate a universal constructor or any other Turing
-            machine.</p>
+            machine.
+          </p>
         </div>
       </div>
     </div>
@@ -64,7 +64,7 @@
       <div class="col-12">
         <div class="nes-container is-dark with-title">
           <p class="title">Rules</p>
-          <p class="rules">
+          <p class="p text-left">
             - Any live cell with two or three live neighbors survives. <br>
             - Any dead cell with three live neighbors becomes a live cell. <br>
             - All other live cells die in the next generation. Similarly, all other dead cells stay dead. <br>
@@ -73,28 +73,26 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-12 text-center">
-        <div class="col-12 mb-3">
-          <a href="./game.html" class="nes-btn is-success">Go to game</a>
-        </div>
-        <div class="col-12 mb-3">
-          <a href="./about.html" class="nes-btn is-primary">How to play?</a>
-        </div>
+    <div class="row mb-5">
+      <div class="col-12 col-sm-4 mb-3">
+        <a href="./game.html" class="nes-btn is-success">Go to game</a>
+      </div>
+      <div class="col-12 col-sm-4 mb-3">
+        <a href="./howtoplay.html" class="nes-btn is-primary">How to play?</a>
+      </div>
+      <div class="col-12 col-sm-4 mb-3">
+        <a href="./about.html" class="nes-btn is-info">About this project</a>
       </div>
     </div>
 
-  </main>
-
-  <footer>
     <div class="row">
-      <div class="col-12 text-center">
+      <div class="col-12">
         <span>In memory of John Conway 1937 - 2020</span>
       </div>
     </div>
 
-  </footer>
 
+  </div>
 
 </body>
 

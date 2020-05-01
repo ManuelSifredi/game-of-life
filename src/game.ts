@@ -10,3 +10,11 @@ const config = {
 };
 
 export default new Phaser.Game(config);
+
+// scale: {
+//     mode: Phaser.Scale.FIT,
+//     parent: 'gameoflife',
+//     autoCenter: Phaser.Scale.CENTER_BOTH,
+//     width: 800,
+//     height: 800
+// },
